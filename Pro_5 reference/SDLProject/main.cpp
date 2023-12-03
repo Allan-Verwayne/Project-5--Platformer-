@@ -247,7 +247,7 @@ void render()
 
     }
     else if (g_current_scene->m_state.player->m_num_kills < 1 && num_lives == 0 && g_current_scene != g_start_screen) {
-        Utility::draw_text(&g_shader_program, font_texture_id, "YOU LOSE...", 1.0f, 0.01f, glm::vec3(g_current_scene->m_state.player->get_position().x -3.0f, -2.0f, 0.0f));
+        Utility::draw_text(&g_shader_program, font_texture_id, "YOU LOSE.", 1.0f, 0.01f, glm::vec3(g_current_scene->m_state.player->get_position().x - 3.0f, -2.0f, 0.0f));
         Mix_HaltMusic();
     }
 
